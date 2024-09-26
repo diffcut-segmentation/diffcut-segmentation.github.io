@@ -223,11 +223,33 @@
 </div>
 </section>
 
+<section class="hero is-small"></section>
+  <div class = "container is-max-desktop">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Recursive Normalized Cut</h2>
+      <div class="level-set has-text-justified">
+            <!--<p>
+              As good candidates for a task of unsupervised segmentation are expected to be semantically coherent, we conduct a comparison between different families of foundation models on their internal alignment at the patch-level. 
+              Selected models include text-to-image DMs (SSD-1B), text-aligned contrastive models (CLIP, SigLIP) and self-supervised models (DINO, DINOv2).<br><br>
+            </p>-->
+      </div>
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/images/recursive_cut.mp4"
+        type="video/mp4">
+      </video>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
 <section class="hero is-small">
   <div class = "container is-max-desktop">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Pipeline</h2>
+      <h2 class="title is-3">DiffCut Pipeline</h2>
       <img src="static/images/diffcut.png" alt="diffcut pipeline"/> <br><br>
       <b>Overview of DiffCut.</b> <b>1)</b> DiffCut takes an image as input and extracts the features of the last self-attention block of a diffusion UNet encoder. <b>2)</b> These features are used to construct an affinity matrix that serves in a <i>recursive normalized cut</i> algorithm, which outputs a segmentation map at the latent spatial resolution. <b>3)</b> A high-resolution segmentation map is produced via a concept assignment mechanism on the features upsampled at the original image size. 
       </div>
